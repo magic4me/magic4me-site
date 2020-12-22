@@ -22,6 +22,7 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<link rel="stylesheet" href="https://magic4me.github.io/css/main.css">
 <!-- icons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -58,43 +59,6 @@
   }]
 }
 </script>
-
-<style type="text/css">
-.link {
-   text-decoration: none;
-   line-height:1;
-   position: relative;
-   z-index: 0;
-   display: inline-block;
-   padding: 5px 5px;
-   overflow: hidden;
-   color: #333;
-   vertical-align: bottom;
-   transition: color .3s ease-out;
-}
-
-.link::before {
-   content: "";
-   position: absolute;
-   z-index: -1;
-   top: 0;
-   left: 0;
-   transform: translateY(calc(100% - 2px));
-   width: 100%;
-   height: 100%;
-   background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
-   transition: transform .25s ease-out;
-}
-
-.link:hover { 
-   color: #fff; 
-}
-.link:hover::before {
-   transform: translateY(0);
-   transition: transform .25s ease-out;
-}
-
-</style>
 </head>
 <body>
 <script async src="https://cse.google.com/cse.js?cx=5cc908cadd3f146a9"></script>
@@ -119,7 +83,7 @@
           <a class="nav-link" href="https://buymeacoff.ee/magic4me">Buy me a book 📖</a>
         </li>
       </ul>
-      <form class="d-flex" onsubmit="if(event.target[0].value){window.location.href='https://cse.google.com/cse?cx=5cc908cadd3f146a9&q='+encodeURI(event.target[0].value)}else{location.reload()};return false">
+      <form class="d-flex" onsubmit="if(event.target[0].value){google.search.cse.element.getElement('searchresults-only0').execute(event.target[0].value)}else{location.reload()};return false">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q" required minlength="3"    autocomplete="off"  >
         <button class="btn btn-outline-success" type="submit">Пошук</button>
       </form>
@@ -127,17 +91,15 @@
   </div>
 </nav>
 
-<div id="searchHideBody" style="position:fixed;top:999%" >
-<div class="gcse-searchresults">
-</div>
+
 
 
 <div class="container pt-3" >
 <h1>Magic4Me</h1>
-<p><strong>Magic for Me</strong> (<strong><em>Magic4Me</em></strong>) по суті являється блогом моїх досягнень у різних сферах <a class="link" href="https://magic4me.github.io/post/magic-all-around">магії та езотерики</a>. 
+<p><strong>Magic for Me</strong> (<strong><em>Magic4Me</em></strong>) по суті являється блогом моїх досягнень у різних сферах <a class="linkm" href="https://magic4me.github.io/post/magic-all-around">магії та езотерики</a>. 
 <br>
 Але одночасно з тим і енциклопедією 📖</p>
-<p><em>Якщо ви найшли помилку або ви з чимось не згідні ви можете висказати це <a class="link" href="https://buymeacoff.ee/magic4me/home-page-comments?via=magic4me">тут</a></em></p>
+<p><em>Якщо ви найшли помилку або ви з чимось не згідні ви можете висказати це <a class="linkm" href="https://buymeacoff.ee/magic4me/home-page-comments?via=magic4me">тут</a></em></p>
 <h2>Про проєкт</h2>
 <p>🆕Це експеримент. Але я надіюся що він допоможе комусь. Також це хороша практика для мене в програмуванні та ще й хороша мотивація продовжувати вивчення, а не зациклюватися на одному</p>
 <h2>Ціль</h2>
@@ -153,7 +115,10 @@
   <div class="container">
     <p class="m-0 text-center text-white">Copyright &copy; Magic4Me 2020</p>
   </div>
-  <!-- /.container -->
+  
+  <div id="searchHideBody" style="position:fixed;top:-999%" >
+  <div class="gcse-searchresults-only">
+  </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
