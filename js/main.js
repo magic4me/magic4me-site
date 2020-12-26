@@ -1,6 +1,7 @@
 function googleTranslateElementInit() {
         new google.translate.TranslateElement(
-            {pageLanguage: 'uk'
+            {pageLanguage: 'uk',
+            autoDisplay: false,
             layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
             },
             'google_translate_element'
