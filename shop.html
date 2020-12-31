@@ -43,17 +43,31 @@
 document.addEventListener("DOMContentLoaded", function() {
 var myCarousel = document.querySelector('#CentralCarousel')
 var carousel = new bootstrap.Carousel(myCarousel)
-document.getElementById(location.hash.substr(1)).style.boxShadow="10px 10px 5px 0px rgba(0,0,0,0.15)";
-});
 
-function SearchFilter(){
+if(location.hash.substr(1)){
+document.getElementById(location.hash.substr(1)).style.boxShadow="10px 10px 5px 0px rgba(0,0,0,0.15)";
+}
+});
+function SearchFilter(text){
+let input;
+if(text){
+input = text;
+document.getElementById("filterI").value = text
+document.getElementById("filterI").scrollIntoView();
+}else{
+input = document.getElementById("filterI").value
+}
+
 document.querySelectorAll(".card").forEach((i)=>{
-if(i.innerText.toUpperCase().indexOf(document.getElementById("filterI").value.toUpperCase()) >0 || !document.getElementById("filterI").value){
+if(i.innerText.toUpperCase().indexOf(input.toUpperCase()) >-1 || !input){
 i.parentNode.style.display="block"
 }else{
 i.parentNode.style.display="none"
 }
 })}
+
+
+
 </script>
 </head>
 <body>
@@ -100,9 +114,9 @@ i.parentNode.style.display="none"
 
         <h1 class="my-4">⚗️Крамниця магічних артефактів</h1>
         <div class="list-group">
-          <a href="#" class="list-group-item">Category 1</a>
-          <a href="#" class="list-group-item">Category 2</a>
-          <a href="#" class="list-group-item">Category 3</a>
+          <a href="#" class="list-group-item filter-item" onclick="SearchFilter(this.innerText)">Таро</a>
+          <a href="#" class="list-group-item filter-item" onclick="SearchFilter(this.innerText)">Category 2</a>
+          <a href="#" class="list-group-item filter-item" onclick="SearchFilter(this.innerText)">Category 3</a>
         </div>
 
       </div>
@@ -140,7 +154,7 @@ i.parentNode.style.display="none"
         <div class="row">
 <div class="col-12">
 <div class="alert alert-secondary" role="alert">
-    <input id="filterI" placeholder="filter" onkeyup="SearchFilter()">
+    <input id="filterI" type="search"  placeholder="filter" class="w-100"  onkeyup="SearchFilter()">
 
 </div>
 </div>
