@@ -175,10 +175,7 @@ height:320px;
 var myCarousel = document.querySelector('#CentralCarousel')
 var carousel = new bootstrap.Carousel(myCarousel)
 document.addEventListener("DOMContentLoaded", function() {
-  
-  var item = document.querySelector(location.hash)
-  alert(item)
-  
+document.getElementById(location.hash.substr(1)).style.boxShadow="10px 10px 5px 0px rgba(0,0,0,0.15)";
 });
 
 </script>
