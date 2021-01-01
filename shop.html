@@ -43,30 +43,19 @@
 document.addEventListener("DOMContentLoaded", function() {
 var myCarousel = document.querySelector('#CentralCarousel')
 var carousel = new bootstrap.Carousel(myCarousel)
-
-if(location.hash.substr(1)){
+if(location.hash.substr(1) && document.getElementById(location.hash.substr(1)).classList[0] == "card"){
 document.getElementById(location.hash.substr(1)).style.boxShadow="10px 10px 5px 0px rgba(0,0,0,0.15)";
 }
 });
 function SearchFilter(text){
 let input;
-if(text){
-input = text;
-document.getElementById("filterI").value = text;
-document.getElementById("filterI").scrollIntoView();
-}else{
-input = document.getElementById("filterI").value
-}
-
 document.querySelectorAll(".card").forEach((i)=>{
-if(i.innerText.toUpperCase().indexOf(input.toUpperCase()) >-1 || !input){
+if(i.innerText.toUpperCase().indexOf(text.toUpperCase()) >-1 || !text){
 i.parentNode.style.display="block"
 }else{
 i.parentNode.style.display="none"
 }
 })}
-
-
 
 </script>
 </head>
@@ -113,10 +102,17 @@ i.parentNode.style.display="none"
       <div class="col-lg-3">
 
         <h1 class="my-4">⚗️Крамниця магічних артефактів</h1>
-        <div class="list-group">
+        
+<!--        <div class="list-group">
           <a href="#" class="list-group-item filter-item" onclick="SearchFilter(this.innerText)">Таро</a>
           <a href="#" class="list-group-item filter-item" onclick="SearchFilter(this.innerText)">Category 2</a>
           <a href="#" class="list-group-item filter-item" onclick="SearchFilter(this.innerText)">Category 3</a>
+        </div>-->
+        <div class="card my-4">
+<!--        <h5 class="card-header">Side Widget</h5>-->
+        <div class="card-body">
+        You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+        </div>
         </div>
 
       </div>
@@ -154,7 +150,14 @@ i.parentNode.style.display="none"
         <div class="row">
 <div class="col-12">
 <div class="alert alert-secondary" role="alert">
-    <input id="filterI" type="search"  placeholder="filter" class="w-100"  onkeyup="SearchFilter()">
+    <input id="filterI" type="search" list="datalistOptions"  placeholder="Пошук товару" class="w-100"  onkeyup="SearchFilter(this.value)">
+    <datalist id="datalistOptions">
+    <option value="Таро">
+    <option value="">
+    <option value="">
+    <option value="">
+    <option value="">
+    </datalist>
 
 </div>
 </div>
@@ -169,119 +172,7 @@ i.parentNode.style.display="none"
                 <p class="card-text">Набор из колоды Уэйта хорошего качества, книги к нему «Таро Уэйта как система» и мешочка для колоды. Дешевле, чем по отдельности!</p>
               </div>
               <div class="card-footer">
-                <small class="text-muted iconsC">&#xe800; &#xe800; &#xe800; &#xe800; &#xe800; </small>
-              </div>
-            </div>
-          </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-            <div id="1nabor-taro-artyra-yejta-kniga-i-meshochek" class="card h-100">
-              <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek"><img class="card-img-top" src="https://i1.wp.com/pentagram.com.ua/wp-content/uploads/2017/07/tarot-whait-set-1.jpg?fit=500%2C500&ssl=1" alt="1Набор Таро Артура Уэйта, книга и мешочек"></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek">1Набор Таро Артура Уэйта, книга и мешочек</a>
-                </h4>
-                <h5 class="text-success">€ 10</h5>
-                <p class="card-text">Набор из колоды Уэйта хорошего качества, книги к нему «Таро Уэйта как система» и мешочка для колоды. Дешевле, чем по отдельности!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted iconsC">&#xe800; &#xe800; &#xe800; &#xe800; &#xe800; </small>
-              </div>
-            </div>
-          </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-            <div id="2nabor-taro-artyra-yejta-kniga-i-meshochek" class="card h-100">
-              <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek"><img class="card-img-top" src="https://i1.wp.com/pentagram.com.ua/wp-content/uploads/2017/07/tarot-whait-set-1.jpg?fit=500%2C500&ssl=1" alt="2Набор Таро Артура Уэйта, книга и мешочек"></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek">2Набор Таро Артура Уэйта, книга и мешочек</a>
-                </h4>
-                <h5 class="text-success">€ 10</h5>
-                <p class="card-text">Набор из колоды Уэйта хорошего качества, книги к нему «Таро Уэйта как система» и мешочка для колоды. Дешевле, чем по отдельности!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted iconsC">&#xe800; &#xe800; &#xe800; &#xe800; &#xe800; </small>
-              </div>
-            </div>
-          </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-            <div id="3nabor-tarom-artyra-yejta-kniga-i-meshochek" class="card h-100">
-              <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek"><img class="card-img-top" src="https://i1.wp.com/pentagram.com.ua/wp-content/uploads/2017/07/tarot-whait-set-1.jpg?fit=500%2C500&ssl=1" alt="3Набор Таром Артура Уэйта, книга и мешочек"></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek">3Набор Таром Артура Уэйта, книга и мешочек</a>
-                </h4>
-                <h5 class="text-success">€ 10</h5>
-                <p class="card-text">Набор из колоды Уэйта хорошего качества, книги к нему «Таро Уэйта как система» и мешочка для колоды. Дешевле, чем по отдельности!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted iconsC">&#xe800; &#xe800; &#xe800; &#xe800; &#xe800; </small>
-              </div>
-            </div>
-          </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-            <div id="4nabor-taro-artyra-yejta-kniga-i-meshochek" class="card h-100">
-              <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek"><img class="card-img-top" src="https://i1.wp.com/pentagram.com.ua/wp-content/uploads/2017/07/tarot-whait-set-1.jpg?fit=500%2C500&ssl=1" alt="4Набор Таро Артура Уэйта, книга и мешочек"></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek">4Набор Таро Артура Уэйта, книга и мешочек</a>
-                </h4>
-                <h5 class="text-success">€ 10</h5>
-                <p class="card-text">Набор из колоды Уэйта хорошего качества, книги к нему «Таро Уэйта как система» и мешочка для колоды. Дешевле, чем по отдельности!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted iconsC">&#xe800; &#xe800; &#xe800; &#xe800; &#xe800; </small>
-              </div>
-            </div>
-          </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-            <div id="5nabor-taro-artyra-yejta-kniga-i-meshochek" class="card h-100">
-              <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek"><img class="card-img-top" src="https://i1.wp.com/pentagram.com.ua/wp-content/uploads/2017/07/tarot-whait-set-1.jpg?fit=500%2C500&ssl=1" alt="5Набор Таро Артура Уэйта, книга и мешочек"></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek">5Набор Таро Артура Уэйта, книга и мешочек</a>
-                </h4>
-                <h5 class="text-success">€ 10</h5>
-                <p class="card-text">Набор из колоды Уэйта хорошего качества, книги к нему «Таро Уэйта как система» и мешочка для колоды. Дешевле, чем по отдельности!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted iconsC">&#xe800; &#xe800; &#xe800; &#xe800; &#xe800; </small>
-              </div>
-            </div>
-          </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-            <div id="6nabor-taro-artyra-yejta-kniga-i-meshochek" class="card h-100">
-              <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek"><img class="card-img-top" src="https://i1.wp.com/pentagram.com.ua/wp-content/uploads/2017/07/tarot-whait-set-1.jpg?fit=500%2C500&ssl=1" alt="6Набор Таро Артура Уэйта, книга и мешочек"></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek">6Набор Таро Артура Уэйта, книга и мешочек</a>
-                </h4>
-                <h5 class="text-success">€ 10</h5>
-                <p class="card-text">Набор из колоды Уэйта хорошего качества, книги к нему «Таро Уэйта как система» и мешочка для колоды. Дешевле, чем по отдельности!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted iconsC">&#xe800; &#xe800; &#xe800; &#xe800; &#xe800; </small>
-              </div>
-            </div>
-          </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-            <div id="7nabor-taro-artyra-yejta-kniga-i-meshochek" class="card h-100">
-              <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek"><img class="card-img-top" src="https://i1.wp.com/pentagram.com.ua/wp-content/uploads/2017/07/tarot-whait-set-1.jpg?fit=500%2C500&ssl=1" alt="7Набор Таро Артура Уэйта, книга и мешочек"></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a rel="nofollow" href="https://pentagram.com.ua/product/nabor-taro-artura-uejta-kniga-i-meshochek">7Набор Таро Артура Уэйта, книга и мешочек</a>
-                </h4>
-                <h5 class="text-success">€ 10</h5>
-                <p class="card-text">Набор из колоды Уэйта хорошего качества, книги к нему «Таро Уэйта как система» и мешочка для колоды. Дешевле, чем по отдельности!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted iconsC">&#xe800; &#xe800; &#xe800; &#xe800; &#xe800; </small>
+                <small class="text-muted iconsC">&#xe800; &#xe800; &#xe800; &#xe800; &#xe801; </small>
               </div>
             </div>
           </div>
