@@ -199,9 +199,11 @@ i.parentNode.style.display="none"
                 <h5 class="text-success">€ 10</h5>
                 <p class="card-text">Набор из колоды Уэйта хорошего качества, книги к нему «Таро Уэйта как система» и мешочка для колоды. Дешевле, чем по отдельности!</p>
               </div>
-              <div class="card-footer">
-                <small class="text-muted iconsC">&#xe800; &#xe800; &#xe800; &#xe800; &#xf123; </small>
-              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center"><div>
+<small class="text-muted iconsC">&#xe800; &#xe800; &#xe800; &#xe800; &#xf123; </small></div>
+<div style="width:2em" data-bs-toggle="tooltip" data-bs-html="true" title="Якість <b>Підтверджено</b>">
+<img data-src="https://www.iconfinder.com/icons/7066787/download/svg/512" loading="lazy" class="w-100 goodItem lazyload ">
+</div></div>
             </div>
           </div>
 
@@ -234,7 +236,12 @@ height:320px;
   <div class="gcse-searchresults-only">
   </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+<script>[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')).map(function(te){return new bootstrap.Tooltip(te)})</script>
+
+
 <script src="https://magic4me.github.io/js/main.js"></script>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
