@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+xmlns:post="http://magic4me.github.io/postdata.xsd">
+
+   <url>
+
+      <loc>http://www.example.com/</loc>
+
+      <lastmod>2005-01-01</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+      
+      <post:image>
+      <post:loc>http://example.com/image.jpg</image:loc>
+      </post:image>
+
+   </url>
+
+</urlset> 
