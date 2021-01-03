@@ -23,4 +23,85 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
    </url>
 
+<url>
+
+   <loc>http://www.example.com/</loc>
+
+   <lastmod>2005-01-01</lastmod>
+
+   <changefreq>monthly</changefreq>
+
+   <priority>0.8</priority>
+   
+   <post:post>
+   <post:banner>http://example.com/image.jpg</post:banner>
+   <post:title>Title</post:title>
+   <post:description>Description</post:description>
+   <post:category>Загальне</post:category>
+   </post:post>
+
+</url>
+
+
+<url>
+
+   <loc>http://www.example.com/</loc>
+
+   <lastmod>2005-01-01</lastmod>
+
+   <changefreq>monthly</changefreq>
+
+   <priority>0.8</priority>
+   
+   <post:post>
+   <post:banner>http://example.com/image.jpg</post:banner>
+   <post:title>Title</post:title>
+   <post:description>Description</post:description>
+   <post:category>Таро</post:category>
+   </post:post>
+
+</url>
+
+
+<url>
+
+   <loc>http://www.example.com/</loc>
+
+   <lastmod>2005-01-01</lastmod>
+
+   <changefreq>monthly</changefreq>
+
+   <priority>0.8</priority>
+   
+   <post:post>
+   <post:banner>http://example.com/image.jpg</post:banner>
+   <post:title>Title</post:title>
+   <post:description>Description</post:description>
+   <post:category>Загальне</post:category>
+   </post:post>
+
+</url>
+
+
+
+<url>
+
+   <loc>http://www.example.com/</loc>
+
+   <lastmod>2005-01-01</lastmod>
+
+   <changefreq>monthly</changefreq>
+
+   <priority>0.8</priority>
+   
+   <post:post>
+   <post:banner>http://example.com/image.jpg</post:banner>
+   <post:title>Title</post:title>
+   <post:description>Description</post:description>
+   <post:category>Таро</post:category>
+   </post:post>
+
+</url>
+
+
 </urlset> 
