@@ -16,6 +16,9 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
       
       <post:post>
       <post:banner>http://example.com/image.jpg</post:banner>
+      <post:title>Title</post:title>
+      <post:description>Description</post:description>
+      <post:category>Загальне</post:category>
       </post:post>
 
    </url>

@@ -7,8 +7,8 @@
 
 <xsd:annotation>
   <xsd:documentation>
-    XML Schema for the Image Sitemap extension. This schema defines the
-    Image-specific elements only; the core Sitemap elements are defined
+    XML Schema for the Post Sitemap extension. This schema defines the
+    Post-specific elements only; the core Sitemap elements are defined
     separately.
   </xsd:documentation>
 </xsd:annotation>
