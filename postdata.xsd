@@ -31,36 +31,35 @@
       <xsd:element name="loc" type="xsd:anyURI">
         <xsd:annotation>
           <xsd:documentation>
+            The URL of the post.
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="banner" type="xsd:anyURI" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>
             The URL of the image.
-          </xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
-      <xsd:element name="caption" type="xsd:string" minOccurs="0">
-        <xsd:annotation>
-          <xsd:documentation>
-            The caption of the image.
-          </xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
-      <xsd:element name="geo_location" type="xsd:string" minOccurs="0">
-        <xsd:annotation>
-          <xsd:documentation>
-            The geographic location of the image. For example,
-            "Limerick, Ireland".
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="title" type="xsd:string" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation>
-            The title of the image.
+            The title of the post.
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="license" type="xsd:anyURI" minOccurs="0">
+      <xsd:element name="description" type="xsd:string" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation>
-            A URL to the license of the image.
+            The description of the post.
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="category" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>
+            The category of the post.
           </xsd:documentation>
         </xsd:annotation>
       </xsd:element>
