@@ -28,7 +28,7 @@
   </xsd:annotation>
   <xsd:complexType>
     <xsd:sequence>
-      <xsd:element name="loc" type="xsd:anyURI">
+      <xsd:element name="loc" type="tLoc">
         <xsd:annotation>
           <xsd:documentation>
             The URL of the post.

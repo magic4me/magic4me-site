@@ -6,7 +6,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
    <url>
 
-<!--      <loc>http://www.example.com/</loc>-->
+      <loc>http://www.example.com/</loc>
 
       <lastmod>2005-01-01</lastmod>
 
@@ -15,7 +15,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
       <priority>0.8</priority>
       
       <post:post>
-      <post:loc>http://example.com/image.jpg</post:loc>
+      <post:banner>http://example.com/image.jpg</post:banner>
       </post:post>
 
    </url>
