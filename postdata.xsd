@@ -10,12 +10,6 @@
     XML Schema for the Image Sitemap extension. This schema defines the
     Image-specific elements only; the core Sitemap elements are defined
     separately.
-
-    Help Center documentation for the Image Sitemap extension:
-
-      http://www.google.com/support/webmasters/bin/answer.py?answer=178636
-
-    Copyright 2010 Google Inc. All Rights Reserved.
   </xsd:documentation>
 </xsd:annotation>
 
@@ -28,13 +22,6 @@
   </xsd:annotation>
   <xsd:complexType>
     <xsd:sequence>
-      <xsd:element name="loc" type="tLoc">
-        <xsd:annotation>
-          <xsd:documentation>
-            The URL of the post.
-          </xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
       <xsd:element name="banner" type="xsd:anyURI" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation>
