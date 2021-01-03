@@ -19,7 +19,7 @@
   </xsd:documentation>
 </xsd:annotation>
 
-<xsd:element name="image">
+<xsd:element name="post">
   <xsd:annotation>
     <xsd:documentation>
       Encloses all information about a single image. Each URL (&lt;loc&gt; tag)

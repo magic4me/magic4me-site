@@ -13,9 +13,9 @@ xmlns:post="http://magic4me.github.io/postdata.xsd">
 
       <priority>0.8</priority>
       
-      <post:image>
-      <post:loc>http://example.com/image.jpg</image:loc>
-      </post:image>
+      <post:post>
+      <post:loc>http://example.com/image.jpg</post:loc>
+      </post:post>
 
    </url>
 
