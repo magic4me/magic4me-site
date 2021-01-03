@@ -8,7 +8,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
       <loc>http://www.example.com/</loc>
 
-      <lastmod>2005-01-01</lastmod>
+      <lastmod>2005-01-02</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -27,7 +27,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
    <loc>http://www.example.com/</loc>
 
-   <lastmod>2005-01-01</lastmod>
+   <lastmod>2005-01-02</lastmod>
 
    <changefreq>monthly</changefreq>
 
@@ -47,7 +47,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
    <loc>http://www.example.com/</loc>
 
-   <lastmod>2005-01-01</lastmod>
+   <lastmod>2005-01-03</lastmod>
 
    <changefreq>monthly</changefreq>
 
@@ -67,7 +67,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
    <loc>http://www.example.com/</loc>
 
-   <lastmod>2005-01-01</lastmod>
+   <lastmod>2005-01-04</lastmod>
 
    <changefreq>monthly</changefreq>
 
@@ -88,7 +88,7 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
    <loc>http://www.example.com/</loc>
 
-   <lastmod>2005-01-01</lastmod>
+   <lastmod>2005-01-05</lastmod>
 
    <changefreq>monthly</changefreq>
 
