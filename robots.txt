@@ -26,6 +26,6 @@ Disallow: /404.html
 # Allow
 Allow: /
 # Host
-Host: https://magic4me.github.io
+Host: https://magic4me.is-a.dev
 # Sitemaps
-Sitemap: https://magic4me.github.io/sitemap.xml
+Sitemap: https://magic4me.is-a.dev/sitemap.xml

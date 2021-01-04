@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'custom';
-  src: url('https://magic4me.github.io/fonts/custom.eot?44906429');
-  src: url('https://magic4me.github.io/fonts/custom.eot?44906429#iefix') format('embedded-opentype'),
-       url('https://magic4me.github.io/fonts/custom.woff2?44906429') format('woff2'),
-       url('https://magic4me.github.io/fonts/custom.woff?44906429') format('woff'),
-       url('https://magic4me.github.io/fonts/custom.ttf?44906429') format('truetype'),
-       url('https://magic4me.github.io/fonts/custom.svg?44906429#custom') format('svg');
+  src: url('https://magic4me.is-a.dev/fonts/custom.eot?44906429');
+  src: url('https://magic4me.is-a.dev/fonts/custom.eot?44906429#iefix') format('embedded-opentype'),
+       url('https://magic4me.is-a.dev/fonts/custom.woff2?44906429') format('woff2'),
+       url('https://magic4me.is-a.dev/fonts/custom.woff?44906429') format('woff'),
+       url('https://magic4me.is-a.dev/fonts/custom.ttf?44906429') format('truetype'),
+       url('https://magic4me.is-a.dev/fonts/custom.svg?44906429#custom') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display:swap;
