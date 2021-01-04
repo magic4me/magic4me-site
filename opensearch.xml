@@ -2,13 +2,19 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
   <ShortName>Magic4Me</ShortName>
   <Description>Magic4Me пошук по сайту</Description>
-  <InputEncoding>UTF-8</InputEncoding>
+<InputEncoding>UTF-8</InputEncoding>
+    <OutputEncoding>UTF-8</OutputEncoding>
+    <Tags>magic magic4me chernayamagiya</Tags>
+    <AdultContent>false</AdultContent>
   <Image width="16" height="16" type="image/x-icon">https://magic4me.is-a.dev/favicon.ico</Image>
   <Url type="text/html" template="https://magic4me.is-a.dev/">
     <Param name="q" value="{searchTerms}"/>
     <!-- other Params if you need them… 
     <Param name="[other key name]" value="[parameter value]"/> -->
   </Url>
+  <Url type="application/x-suggestions+json" template="http://google.com/complete/search?output=firefox&amp;q={searchTerms}"/>
+  <Url rel="suggestions" type="application/x-suggestions+xml" template="http://google.com/complete/search?q={searchTerms}&amp;client=ie8&amp;mw={ie:maxWidth}&amp;sh={ie:sectionHeight}&amp;rh={ie:rowHeight}&amp;inputencoding={inputEncoding}&amp;outputencoding={outputEncoding}"/>
+  
 <!--  <Url type="application/x-suggestions+json" template="[suggestionURL]"/>-->
   <moz:SearchForm>https://magic4me.is-a.dev/</moz:SearchForm>
 </OpenSearchDescription>
