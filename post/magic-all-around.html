@@ -9,45 +9,6 @@
 "publisher":{"@type":"Organization","name":"Magic4Me"},
   "datePublished": "2021-01-03"
 }
-</script><script type=text/javascript>
-document.addEventListener("DOMContentLoaded", (ee)=>{
-let img = [];
-document.querySelectorAll("img").forEach((e)=>{
-let src,title,desc
-if(e.dataset.src){
-src = e.dataset.src 
-}else{
-src = e.src 
-}
-if(e.alt){
-title = e.alt
-}else{
-title = document.querySelector("title").innerText
-}
-desc = document.querySelector("meta[name='description']").content
-img.push({img:src,title:title,desc:desc})
-});
-
-img=img.filter((e)=>{
-i =new URL(e.img)
-if(i.pathname != "/img/logo.svg" && i.host!="www.gstatic.com"){
-return true
-}})
-ldS = '{"@context": "http://schema.org","@graph":['
-for (var ii=0;ii<img.length;ii++){
-ldS += '{ "@type": "ImageObject", "contentUrl": "'+img[ii].img+'", "description": "'+img[ii].desc+'", "name": "'+img[ii].title+'" }'
-if(1+ii<img.length){ldS +=","}
-}
-ldS += "]}"
-
-
-const script = document.createElement('script');
-  script.setAttribute('type', 'application/ld+json');
-  script.textContent = ldS;
-  document.head.appendChild(script);
-
-
-});
 </script><script>
 function openNav() {
   document.getElementById("menuSidebar").style.width = "256px";
