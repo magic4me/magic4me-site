@@ -44,3 +44,5 @@ font-display:swap;
 .icon-star:before { content: '\e800'; } /* '' */
 .icon-star-empty:before { content: '\e801'; } /* '' */
 .icon-star-half-alt:before { content: '\f123'; } /* '' */
+
+.goodItem{width:2em;height:2em;background:url(https://magic4me.is-a.dev/img/isgoodItem.svg);background-size:2em;}
