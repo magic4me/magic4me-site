@@ -5,8 +5,8 @@ var carousel = new bootstrap.Carousel(myCarousel)
 let itemCardU= new URLSearchParams(window.location.search).get("it")
 if(itemCardU && document.getElementById(itemCardU).classList[0] == "card"){
 let itemCard = document.getElementById(itemCardU);
-document.title=""
-document.querySelector("meta[name='description']")=""
+document.title;
+document.querySelector("meta[name='description']");
 itemCard.style.boxShadow="10px 10px 5px 0px rgba(0,0,0,0.15)";
 itemCard.parentNode.scrollIntoView(false);
 }
