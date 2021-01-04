@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Magic4Me</ShortName>
+  <Description>Magic4Me пошук по сайту</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://magic4me.is-a.dev/favicon.ico</Image>
+  <Url type="text/html" template="https://magic4me.is-a.dev/">
+    <Param name="q" value="{searchTerms}"/>
+    <!-- other Params if you need them… 
+    <Param name="[other key name]" value="[parameter value]"/> -->
+  </Url>
+<!--  <Url type="application/x-suggestions+json" template="[suggestionURL]"/>-->
+  <moz:SearchForm>https://magic4me.is-a.dev/</moz:SearchForm>
+</OpenSearchDescription>
