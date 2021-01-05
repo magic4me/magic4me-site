@@ -14,9 +14,9 @@ title = e.alt
 }else{
 title = document.querySelector("title").innerText
 }
-if(!e.classList.contains("LDJSnodesc")){
-desc = document.querySelector("meta[name='description']").content
-}
+if(e.classList.contains("LDJSnodesc")){
+desc = ""
+}else{document.querySelector("meta[name='description']").content}
 img.push({img:src,title:title,desc:desc})
 });
 
