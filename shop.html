@@ -1,15 +1,16 @@
 <!DOCTYPE html><html lang=uk><head><meta charset=utf-8><meta name=description content="Крамниця Magic4Me. Каталог товарів для обрядів від Magic4Me"><meta property=og:description content="Крамниця Magic4Me. Каталог товарів для обрядів від Magic4Me"><meta name=keywords content="Magic4Me, купити, купить, магазин, артефакти, крамниця"><meta property=og:title content="Magic4Me - Крамниця магічних артефактів."><title>Magic4Me - Крамниця магічних артефактів.</title><meta property=og:image content=https://magic4me.is-a.dev/img/shopCrs1.webp><meta property=og:image:url content=https://magic4me.is-a.dev/img/shopCrs1.webp><meta property=twitter:image content=https://magic4me.is-a.dev/img/shopCrs1.webp><meta name=viewport content="width=device-width, initial-scale=1"><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css rel=stylesheet><link rel=stylesheet href=https://magic4me.is-a.dev/css/main.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=google-translate-customization content=9b11c7489e624f84-411a55f0de6fb89f-gd1a550bade4ac0c2-11><meta name=apple-mobile-web-app-title content="Magic for Me"><meta name=application-name content="Magic for Me"><meta name=msapplication-TileColor content=#ffc40d><meta name=theme-color content=#ffffff><link href=https://translate.googleapis.com/ rel=preconnect><link href=https://cse.google.com/ rel=preconnect><link href=https://www.google.com/ rel=preconnect><link rel=search type=application/opensearchdescription+xml title=Magic4Me href=https://magic4me.is-a.dev/opensearch.xml><link rel=preload href=https://magic4me.is-a.dev/fonts/custom.woff?44906429 as=font><link rel=stylesheet href=https://magic4me.is-a.dev/css/custom.css><script>
 document.addEventListener("DOMContentLoaded", function() {
-var myCarousel = document.querySelector('#CentralCarousel')
-var carousel = new bootstrap.Carousel(myCarousel)
+var d=document;
+let carousel = new bootstrap.Carousel(d.querySelector('#CentralCarousel'))
 let itemCardU= new URLSearchParams(window.location.search).get("it")
-if(itemCardU && document.getElementById(itemCardU).classList[1] == "itemcard"){
-let itemCard = document.getElementById(itemCardU);
-document.title = "Magic4Me - "+itemCard.childNodes[2].childNodes[0].innerText;
-document.querySelector("meta[name='description']");
+if(itemCardU && d.getElementById(itemCardU).classList[1] == "itemcard"){
+let itemCard = d.getElementById(itemCardU);
+d.title = "Magic4Me - "+itemCard.childNodes[2].childNodes[0].innerText;
+d.querySelector("meta[name='description']");
+//document.querySelector("meta[name='og:image']").content = document.querySelector("meta[name='og:image:url']").content = "";
+itemCard.childNodes[0].type=itemCard.childNodes[0].type.substr(0,itemCard.childNodes[0].type.length-1)
 itemCard.style.boxShadow="10px 10px 5px 0px rgba(0,0,0,0.15)";
 scroll({top: itemCard.offsetTop,behavior: "smooth"});
-itemCard.childNodes[0].type=itemCard.childNodes[0].type.substr(0,itemCard.childNodes[0].type.length-1)
 }
 });
 function SearchFilter(text){
