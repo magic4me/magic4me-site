@@ -23,8 +23,10 @@
 User-agent: *
 # Disallow
 Disallow: /404.html
+Disallow: /*?*
 # Allow
 Allow: /
+Allow: /shop?it=*
 # Host
 Host: https://magic4me.is-a.dev
 # Sitemaps
